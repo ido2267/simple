@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function init()
+            {
+                
+            }
+            function onRollDiceClick(){
+                var  rnd = Math.random( ) * 6 ;
+                 rnd = Math.ceil(rnd);
+                id_span.innerHTML = rnd;
+               
+                id_img.src = "images/dice" +rnd+ ".jpg";
+            }
+         </script>
+    </head>
+    <body onload="init()">
+        <div> <strong> Casino</strong></div>
+        <img id="id_img" src="images/dice1.jpg" width="150">
+        <h2>You got:<span id="id_span"></span> </h2>
+        <button onclick="onRollDiceClick()">Roll Dice</button>
+    </body>
+</html>
