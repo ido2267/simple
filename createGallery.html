@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Element with Js</title>
+        <link rel="stylesheet" href="createGallery.css">
+        <script src="createGallery.js"></script>
+ </head>
+<body onload="init()">
+    <div id="all_site">
+        <div class="gallery"></div>
+        <img class="big_pic" id="big_pic" src="images/dice1.jpg" width="100%">
+        <img class="big_pic" id="pic1" src="images/dice1.jpg" width="25%" onclick="onpic1Click()">
+        <img class="big_pic" id="pic2" src="images/dice2.jpg" width="25%" onclick="onpic2Click()">
+        <img class="big_pic" id="pic3" src="images/dice3.jpg" width="25%" onclick="onpic3Click()">
+        <img class="big_pic" id="pic4" src="images/dice4.jpg" width="25%" onclick="onpic4Click()">
+     <!--   <img class="big_pic" id="pic5" src="images/dice6.jpg" width="25%"> -->
+
+       <button type="button" onclick="backPic()" id="back_btn">Back</button>
+       <button type="button" onclick="nextPic()" id="next_btn">Next</button>
+
+    </div>
+     
+</body>
+</html>

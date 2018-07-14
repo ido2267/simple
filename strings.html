@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String Manipulations</title>
+    <script>
+     var str= "The brown Monkeys are the best in the web";
+
+    window.onload = function(){
+        caseStr();
+        traceStr();
+        replaceStr();
+        searchStr(); 
+        substrStr();  
+        splitStr();
+     }
+    function splitStr(){
+        var sub_ar = str.split(" ");  // create an array
+        console.log(sub_ar);
+    }
+     function caseStr(){
+        id_h2.innerHTML += str + "<br>";
+        var lowerStr = str.toLocaleLowerCase();
+        id_h2.innerHTML += "Lower: " + lowerStr + "<br>";
+        id_h2.innerHTML += "upper: " + str.toUpperCase() +"<br>"; // short
+     }
+     function traceStr(){
+ 
+        var len = str.length;
+        id_h2.innerHTML += "lenght: " +  len + "<br>";
+        var indexOf = str.indexOf("brown");
+        id_h2.innerHTML += "Index of brown is: " + indexOf + "<br>";
+        indexOf = str.indexOf("o",7);
+        id_h2.innerHTML += "The second 'o' is at position: " + indexOf+ "<br>";
+     }
+     function replaceStr(){
+         var replace = str.replace("brown", "green");
+        id_h2.innerHTML += "replace: " + replace + "<br>";
+     }
+     function searchStr(){
+         var indexOf=  str.indexOf("o");
+        
+         while ( indexOf != -1 )
+        {
+             var  last = indexOf + 2;
+            id_h2.innerHTML += "The index of o is: " + indexOf + "<br>";
+            indexOf=  str.indexOf("o",last);
+         }
+     }
+     function substrStr()
+           {  var substr = str.substr(4,6);
+            id_h2.innerHTML += "substr:  " + substr + "<br>"; // brown
+            var substring = str.substring(4,6);
+            id_h2.innerHTML += "substring:  " + substring + "<br>"; // br
+             }
+    </script>
+</head>
+<body>
+    <div><h2 id="id_h2"></h2></div>
+</body>
+</html>

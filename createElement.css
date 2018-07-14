@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    background-color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    direction: ltr;
+}
+
+#all_site{
+    max-width: 960px;
+    background-color: white;
+    margin 0 auto;
+    height: 500px;
+}
+
+.box{
+width: 100px;
+height: 100px;
+background-color: orange;
+border: 1px solid black;
+float: left;
+}
